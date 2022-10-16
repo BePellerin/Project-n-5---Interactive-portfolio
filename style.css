@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Beauty";
+  src: url(/Assets/Typo/SEGOEUI.TTF);
+}
+body {
+  background: #DAE4FF;
+  font-family: "Beauty", sans-serif;
+  padding: 20px 0px 50px 0px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1em;
+  text-align: center;
+}
+
+.projects {
+  width: 80%;
+  margin: auto;
+}
+.projects .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projects .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  border: 2px solid rgb(248, 169, 95);
+  background: white;
+  margin: 20px 0px;
+}
+.projects .cardImg {
+  width: 200px;
+}
+.projects .cardText {
+  text-align: center;
+}
+
+.newProject {
+  margin: 100px auto 0px auto;
+  width: 50%;
+  border-radius: 25px;
+  padding: 20px 50px 50px 50px;
+  background: #FBE1E0;
+}
+.newProject .npInput {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  margin: 20px 0px;
+}
+.newProject .npForm {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  margin: 20px;
+}
+.newProject .npInput input {
+  width: 60%;
+  border-radius: 8px;
+  border: none;
+  height: 2em;
+  font-family: "Beauty", sans-serif;
+}
+.newProject .npInput input:focus {
+  outline: solid #FE786D;
+}
+.newProject .npTextarea {
+  flex-direction: column;
+  align-items: center;
+}
+.newProject .npTextarea textarea:focus {
+  outline: solid #FE786D;
+}
+.newProject .npTextarea textarea {
+  border-radius: 10px;
+  margin: 20px;
+  font-family: "beauty", sans-serif;
+  border: none;
+  width: 80%;
+}
+.newProject .npButton {
+  width: 50%;
+  margin: 15px auto;
+  background: #FE786D;
+  border: none;
+  border-radius: 10px;
+  font-family: "beauty", sans-serif;
+  font-size: 2rem;
+  min-height: fit-content;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

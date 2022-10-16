@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets cartes</title>
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    
+
+<section id="projects" class="projects">
+    <h2 class="pTitle">Mes projets</h2>
+    <section id="cards" class="cards">
+        <div class="card">
+            <h3 class="cardTitle">Un projet JS</h3>
+            <img src="./Assets/javascript.jpg" alt="Image d'illustration du projet JS" class="cardImg">
+            <p class="cardText">Site portolio de projets en formes de cartes</p>
+        </div>
+        <div class="card">
+            <h3 class="cardTitle">Un projet React</h3>
+            <img src="./Assets/react.jpg" alt="Image d'illustration du projet JS" class="cardImg">
+            <p class="cardText">Projet react site de recette communautaire</p>
+        </div>
+        <div class="card">
+            <h3 class="cardTitle">Un projet Node</h3>
+            <img src="./Assets/node.jpg" alt="Image d'illustration du projet JS" class="cardImg">
+            <p class="cardText">Mini réseau social connecté à MongoDB</p>
+        </div>
+    </section>
+</section>
+
+<section id="newProject" class="newProject">
+
+    <h2 class="npTitle">Ajouter un projet</h2>
+    <form id="npForm" class="npForm" onsubmit="handleSubmit(event)">
+        <div class="npInput">
+            <label for="npTitle">Titre du projet</label>
+            <input type="text" name="npTitle" id="npTitle">
+        </div>
+
+        <div class="npInput">
+            <label for="projectImgLink">Lien URL de l'image</label>
+            <input type="text" name="projectImgLink" id="projectImgLink">
+        </div>
+
+        <div class="npInput npTextarea">
+            <label for="npDescription">Description du projet</label>
+            <textarea name="npDescription" id="npDescription" rows="10"></textarea>
+        </div>
+
+        <button class="npButton" type="submit">Allez !</button>
+
+    </form>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>

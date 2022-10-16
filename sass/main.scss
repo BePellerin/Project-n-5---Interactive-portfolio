@@ -1,0 +1,163 @@
+@font-face{
+    font-family: "Beauty";
+    src: url(../Assets/Typo/AntiqueHeritagePersonalUseRegular-9Y9Wy.otf);
+}
+
+@mixin center{
+    text-align: center;
+}
+body{
+    background: #DAE4FF;
+    font-family: "Beauty", sans-serif;
+    padding: 20px 0px 50px 0px;
+}
+
+h2{
+    font-size: 1em;
+    @include center();
+}
+
+h3{
+    font-size: 1.2em;
+    @include center();
+}
+
+.projects{
+    width: 80%;
+    margin: auto;
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        border: 2px solid rgb(248, 169, 95);
+        background: white;
+        margin: 20px 0px;
+    }
+    .cardImg{
+        width: 200px;
+    }
+    .cardText{
+        @include center();
+    }
+}
+
+.newProject{
+    margin: 100px auto 0px auto;
+    width: 50%;
+    border-radius: 25px;
+    padding: 20px 50px 50px 50px;
+    background: #FBE1E0;   
+
+    .npInput{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+        margin: 20px 0px;
+     }
+
+     .npForm{
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        margin: 20px;
+    }
+
+    .npInput input{
+        width: 60%;
+        border-radius: 8px;
+        border: none;
+        height: 2em;
+        font-family: "Beauty", sans-serif;
+    }
+
+    .npInput input:focus{
+        outline: solid #FE786D;
+    }
+
+    .npTextarea{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .npTextarea textarea:focus{
+        outline: solid #FE786D;
+    }
+
+    .npTextarea textarea {
+        border-radius: 10px;
+        margin: 20px;
+        font-family: "beauty", sans-serif;
+        border: none;
+        width: 80%;
+    }
+
+    .npButton{
+        width: 50%;
+        margin: 15px auto;
+        background: #FE786D;
+        border: none;
+        border-radius: 10px;
+        font-family: "beauty", sans-serif;
+        font-size: 2rem;
+        min-height: fit-content;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+// @media screen and (max-width: 900px){
+
+//     .cardImg{
+//         width: 5px;
+//     }
+
+//     .npInput{
+//     flex-direction: column;
+//     align-items: center;
+//     }
+
+//     .npInput input{
+//     width: 80%;
+//     margin-top: 10px;
+//     }
+
+// }
+
+// @media screen and (max-width: 700px){
+    
+//     .cards{
+//         justify-content: center;
+//     }
+
+//     .card{
+//     width: 80%;
+//     }
+
+//     .newProject{
+//         width: 80%;
+//     }
+// }
+
+// @media screen and (max-width: 430px){
+    
+//     .cardImg{
+//     width: 150%;
+//     }
+//     .npInput{
+//         text-align: center;
+//     }
+//     .npTextarea textarea, .npInput input{
+//         width: 100%;
+//     }
+//     .npButton{
+//         width: 100px;
+//     }
+// }
